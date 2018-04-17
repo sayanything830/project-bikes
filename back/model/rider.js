@@ -3,7 +3,7 @@
 const mongoose = require('mongoose');
 
 const Rider = mongoose.Schema({
-  'name': {type: String},
+  'name': {type: String, required: true},
   'bikes': [{type: mongoose.Schema.Types.ObjectId, ref: 'bikes'}],
 });
 
