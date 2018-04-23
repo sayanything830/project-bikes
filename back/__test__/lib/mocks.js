@@ -28,7 +28,7 @@ mock.bike.createOne = () => {
       result.rider = rider;
       return new Bike({
         make: `${faker.hacker.adjective()}`,
-        category: faker.hacker.ingverb(),
+        model: faker.hacker.ingverb(),
         rider: rider._id.toString(),
       }).save();
     })
@@ -44,7 +44,7 @@ mock.bike.createMany = n => {
       result.rider = rider;
       let bikeProms = new Array(n).fill(0).map(() => new Bike({
         make: `${faker.hacker.adjective()}`,
-        category: faker.hacker.ingverb(),
+        model: faker.hacker.ingverb(),
         rider: rider._id.toString(),
       }).save());
       return Promise.all(bikeProms);

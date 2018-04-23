@@ -14,7 +14,6 @@ describe('Bike Module', function() {
       expect(newBike).toBeInstanceOf(Object);
     });
     it('should contain properties of make, model, and year', () => {
-      console.log(newBike);
       expect(newBike).toHaveProperty('make');
       expect(newBike).toHaveProperty('model');
       expect(newBike).toHaveProperty('year');

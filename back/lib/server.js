@@ -3,7 +3,7 @@
 // *** Application Dependencies *** //
 const cors = require('cors');
 const express = require('express');
-const mongoose = require('monogoose');
+const mongoose = require('mongoose');
 const errorHandler = require('./error-handler');
 
 // *** Application Setup *** //
